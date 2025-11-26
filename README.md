@@ -1,4 +1,4 @@
-# Dugsiye_React_js_Exercises
+# Dugsiye_Database_Exercises
 
 This repository contains 10 Database Exercises designed to improve your coding skills progressively. Each exercise has its own folder with a README file explaining the task and requirements.
 
