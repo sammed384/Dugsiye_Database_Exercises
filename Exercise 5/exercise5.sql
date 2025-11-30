@@ -9,7 +9,8 @@ values('sam','sam@gmail.com'),('med','med@gmail.com'),('ali','ali@gmail.com'),('
 insert into courses(title) values('html'),('css'),('javascript'),('reactjs'),('nodejs'),('nextjs');
 insert into  enrollments(student_id,course_id) values(1,1),(2,2);
 #3. Use INNER JOIN to find who is enrolled
-select students.name , courses.title from enrollments join students on student_id= students.id join courses on course_id = courses.id;
+select students.name , courses.title from enrollments 
+join students on student_id= students.id join courses on course_id = courses.id;
 #4. Use LEFT JOIN to list all students + their courses (NULL if none)
 select students.name , courses.title from students
 left join enrollments on students.id = enrollments.student_id left join courses on course_id = courses.id;
