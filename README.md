@@ -11,4 +11,5 @@ This repository contains 10 Database Exercises designed to improve your coding s
 5. [Exercise 5](https://github.com/sammed384/Dugsiye_Database_Exercises/tree/main/Exercise%205)
 6. [Exercise 6](https://github.com/sammed384/Dugsiye_Database_Exercises/tree/main/Exercise%206)
 7. [Exercise 7](https://github.com/sammed384/Dugsiye_Database_Exercises/tree/main/Exercise%207)
+8. [Exercise 8](https://github.com/sammed384/Dugsiye_Database_Exercises/tree/main/Exercise%208)
 
