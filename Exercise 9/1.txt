@@ -1,0 +1,15 @@
+1. Set a new email for `Khalid`
+db.students.updateOne({name: "Khalid"},{$set : {email: "Khalid@gmail.com"}})
+2. Increase Ayaan’s points by 20
+db.students.updateOne({name: "Ayaan"},{$inc : {point: 20}})
+3. Add `"GraphQL"` to Nasteexo’s courses
+db.students.updateOne({name: "Nasteexo"},{$push: {courses : "GraphQL"}})
+4. Remove `"React"` from Ayaan’s courses
+db.students.updateOne({name: "Ayaan"},{$pull: {courses : "React"}})
+5. Update multiple fields in one operation
+db.students.updateOne({name: "Ayaan"},
+{
+    $pull: {courses : "React"},
+    $push: {courses : {$each: ["db","css"]}},
+    $inc : {point: 50}
+})
