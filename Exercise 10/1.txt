@@ -1,0 +1,13 @@
+1. Use `$unwind` to flatten the `courses` array
+2. Use `$match` to **filter only scores above 85**
+3. Use `$group` to count how many top performers per course
+4. Use `$project` to rename `_id` to `course`, and show `total`
+5. Use `$sort` to order by most high scorers
+
+db.students.aggregate([
+    {$unwind: "$courses"},
+    {$match: {"courses.score" : {$gt: 85}}},
+    {$group: {_id : "$courses.title", total: {$sum: 1}, avgScore:{$avg: "$courses.score"} }},
+    {$project: {_id : 0, course: "$_id", total: 1, avgScore: 1}},
+    {$sort: {total: -1}}
+])
